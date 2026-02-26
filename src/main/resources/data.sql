@@ -1,13 +1,17 @@
-INSERT INTO items (name, description)
+INSERT INTO items (id, name, description)
+OVERRIDING SYSTEM VALUE
 VALUES
-('T-Shirt', 'Cotton t-shirt'),
-('Hoodie', 'Hoodie');
+(1, 'T-Shirt', 'Cotton t-shirt'),
+(2, 'Hoodie', 'Hoodie')
+ON CONFLICT (id) DO NOTHING;
 
-INSERT INTO variants (category, name, is_active)
+INSERT INTO variants (id, category, name, is_active)
+OVERRIDING SYSTEM VALUE
 VALUES
-('Size', 'L', TRUE),
-('Size', 'XL', TRUE),
-('Color', 'Black', TRUE),
-('Color', 'White', TRUE),
-('Tier', 'Epic', TRUE),
-('Tier', 'Legendary', TRUE);
+(1, 'Size', 'L', TRUE),
+(2, 'Size', 'XL', TRUE),
+(3, 'Color', 'Black', TRUE),
+(4, 'Color', 'White', TRUE),
+(5, 'Tier', 'Epic', TRUE),
+(6, 'Tier', 'Legendary', TRUE)
+ON CONFLICT (id) DO NOTHING;
