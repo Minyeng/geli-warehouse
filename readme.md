@@ -1,5 +1,5 @@
-# 📦 Inventory Management API
-A Spring Boot–based Inventory Management System that supports:
+# 📦 Shop Warehouse Management API
+A Spring Boot–based Shop Warehouse Management System that supports:
 - Items
 - Variants (size, color, etc.)
 - Pricing per variant
